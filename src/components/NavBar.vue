@@ -60,6 +60,9 @@ export default {
 	a {
 		color: white;
 	}
+	li > a {
+		color: white;
+	}
 	.navbar-brand {
 		font-family: $font-family-secondary;
 		font-size: 2.5rem;

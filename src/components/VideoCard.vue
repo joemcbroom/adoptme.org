@@ -1,17 +1,28 @@
 <template>
-	<div class="card pb-4">
+	<div class="card pb-0" id="video-card">
 		<div class="card-body">
-			<h5 class="card-title text-left pl-2 mb-0">VOLUNTEERS</h5>
-			<div id="player"></div>
+			<h5 class="card-title text-left pl-2 mb-0">
+				TESTIMONIAL OF THE MONTH
+			</h5>
+			<youtube class="video" :video-id="videoId"></youtube>
 		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			videoId: "MbsesOZTWXI"
+		};
+	}
+};
 </script>
 
 <style lang="scss">
+.video iframe {
+	width: 100%;
+}
 .card {
 	border: none;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(133, 133, 133, 0.85);
@@ -28,7 +39,7 @@ export default {};
 		font-size: 1rem;
 		font-weight: bold;
 		color: white;
-		background-color: $color-blue;
+		background-color: $color-red;
 	}
 	.card-text {
 		font-size: 0.8rem;

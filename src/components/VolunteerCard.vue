@@ -7,7 +7,7 @@
 				src="@/assets/img/girl.png"
 				alt="Card image"
 			/>
-			<p class="card-text text-left p-3">
+			<p class="card-text text-left pt-5 px-3">
 				Amazing people, making a difference every single day. Join
 				us now and be part of a community that is changing the
 				world.
@@ -31,6 +31,7 @@ export default {};
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(133, 133, 133, 0.85);
 	-moz-box-shadow: 0px 3px 5px 0px rgba(133, 133, 133, 0.85);
 	box-shadow: 0px 3px 5px 0px rgba(133, 133, 133, 0.85);
+	height: 100%;
 }
 .card-body {
 	padding: 0;
@@ -57,6 +58,7 @@ export default {};
 	border: 2px solid $color-blue;
 	border-radius: 0;
 	line-height: 0.8rem;
+	max-height: 2rem;
 
 	a {
 		color: $color-blue;

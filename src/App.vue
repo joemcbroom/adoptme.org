@@ -2,6 +2,7 @@
 	<div id="app">
 		<nav-bar />
 		<router-view />
+		<footer-nav />
 	</div>
 </template>
 
@@ -10,10 +11,13 @@
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "@/components/NavBar.vue";
+import FooterNav from "@/components/FooterNav";
+
 export default {
 	name: "home",
 	components: {
-		NavBar
+		NavBar,
+		FooterNav
 	}
 };
 </script>
