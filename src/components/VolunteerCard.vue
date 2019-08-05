@@ -14,9 +14,12 @@
 			</p>
 		</div>
 		<div class="card-body pl-3 d-flex justify-content-start">
-			<button class="btn btn-outline-primary btn-join">
-				<a href="#" class="card-link">JOIN US</a>
-			</button>
+			<router-link
+				:to="{ name: 'volunteers' }"
+				tag="button"
+				class="card-link btn btn-outline-primary btn-join"
+				>JOIN US</router-link
+			>
 		</div>
 	</div>
 </template>
@@ -57,13 +60,16 @@ export default {};
 .btn-join {
 	border: 2px solid $color-blue;
 	border-radius: 0;
-	line-height: 0.8rem;
+	line-height: 1rem;
 	max-height: 2rem;
 
-	a {
-		color: $color-blue;
-		font-weight: bold;
-		font-size: 0.8rem;
-	}
+	color: $color-blue;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+.btn-outline-primary:hover {
+	background-color: transparent;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
 }
 </style>

@@ -4,11 +4,12 @@
 		<div class="row justify-content-center img-text">
 			<div class="col col-md-10 text-left">
 				<h2>This is your new family!</h2>
-				<button class="btn btn-outline-danger">
-					<router-link :to="{ name: 'home' }"
-						>ADOPT NOW</router-link
-					>
-				</button>
+				<router-link
+					:to="{ name: 'home' }"
+					class="btn btn-outline-danger"
+					tag="button"
+					>ADOPT NOW</router-link
+				>
 			</div>
 		</div>
 	</div>
@@ -53,13 +54,13 @@ export default {};
 		.btn:hover {
 			background-color: transparent;
 		}
-		.btn a {
+		.btn {
 			font-family: $font-family-primary;
 			color: $color-red;
 			font-weight: bold;
 			font-size: 0.8rem;
 		}
-		.btn a:hover {
+		.btn-outline-danger:hover {
 			text-shadow: 1px 1px 1px black;
 			text-decoration: none;
 		}
