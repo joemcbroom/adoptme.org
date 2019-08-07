@@ -47,19 +47,18 @@ export default {};
 			font-family: $font-family-secondary;
 		}
 		.btn {
-			border-radius: 0;
-			border: 2px solid $color-red;
-			line-height: 1rem;
+			// border-radius: 0;
+			// border: 2px solid $color-red;
+			// line-height: 1rem;
+			// font-family: $font-family-primary;
+			// color: $color-red;
+			// font-weight: bold;
+			// font-size: 0.8rem;
 		}
 		.btn:hover {
 			background-color: transparent;
 		}
-		.btn {
-			font-family: $font-family-primary;
-			color: $color-red;
-			font-weight: bold;
-			font-size: 0.8rem;
-		}
+
 		.btn-outline-danger:hover {
 			text-shadow: 1px 1px 1px black;
 			text-decoration: none;

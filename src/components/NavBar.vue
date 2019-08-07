@@ -60,6 +60,9 @@ export default {
 	a {
 		color: white;
 	}
+	a.nav-link:hover {
+		cursor: pointer;
+	}
 	li > a {
 		color: white;
 	}

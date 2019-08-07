@@ -34,4 +34,16 @@ h1 {
 	color: $color-blue;
 	font-size: $font-size-h1;
 }
+.btn {
+	width: 112px !important;
+}
+.btn-outline-danger {
+	border-radius: 0;
+	border: 2px solid $color-red;
+	line-height: 1rem;
+	font-family: $font-family-primary;
+	color: $color-red;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
 </style>

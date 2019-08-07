@@ -13,12 +13,17 @@
 			>
 				<div class="card">
 					<h5
-						class="card-title text-left pl-2 mb-0"
+						class="card-title text-center pl-2 mb-0"
 						:style="{
-							backgroundColor: volunteer.favoriteColor
+							backgroundColor: volunteer.favoriteColor.replace(
+								/\s+/g,
+								''
+							)
 						}"
 					>
-						{{ volunteer.name }}
+						<span class="title-span px-1">
+							{{ volunteer.name }}
+						</span>
 					</h5>
 					<div class="card-body p-2">
 						<p>
@@ -95,7 +100,13 @@ export default {
 }
 .card-title {
 	color: white;
-	line-height: 2rem;
+	line-height: 3rem;
+
+	span {
+		background-color: white;
+		color: black;
+		border: 1px solid black;
+	}
 }
 .avatar {
 	border: 2px solid black;

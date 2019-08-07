@@ -37,7 +37,7 @@
 						role="tabpanel"
 						aria-labelledby="programs-tab"
 					>
-						BEHAVIOR PROGRAM TEST12
+						<behavior-program />
 					</div>
 					<div
 						class="tab-pane"
@@ -45,11 +45,11 @@
 						role="tabpanel"
 						aria-labelledby="companies-tab"
 					>
-						ASSOCIATED COMPANIES AND STUFF
+						<associated-companies />
 					</div>
 				</div>
 			</div>
-			<div class="col col-11 col-md-4">
+			<div class="col col-11 col-md-4 d-flex align-items-center">
 				<img
 					class="dog-img"
 					src="@/assets/img/cutedog.png"
@@ -61,7 +61,15 @@
 </template>
 
 <script>
-export default {};
+import BehaviorProgram from "@/components/BehaviorProgram";
+import AssociatedCompanies from "@/components/AssociatedCompanies";
+
+export default {
+	components: {
+		BehaviorProgram,
+		AssociatedCompanies
+	}
+};
 </script>
 
 <style lang="scss">
@@ -73,12 +81,12 @@ export default {};
 	border-bottom: 3px solid $color-blue;
 }
 .dog-img {
-	width: 80%;
-	object-fit: contain;
+	width: 40%;
+	margin: auto;
 }
 @media only screen and (max-width: 768px) {
 	.dog-img {
-		width: 40%;
+		width: 20%;
 	}
 }
 </style>
